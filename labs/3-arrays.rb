@@ -15,3 +15,10 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+my_shopping_list = ["milk", "eggs", "bacon"]
+my_friends_shopping_list = ["beer", "cookies", "apples"]
+combined_shopping_list = my_shopping_list.union(my_friends_shopping_list)
+combined_shopping_list = combined_shopping_list.sort
+
+combined_shopping_list.each {|x| print "Buy #{x}", " "}
